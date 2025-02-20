@@ -13,11 +13,11 @@ header {
 }
 
 nav {
-    margin: 20px 0;
+    margin: 80px 0;
 }
 
 nav a {
-    color: #fff;
+    color: #;
     text-decoration: none;
     margin: 0 15px;
 }
@@ -58,4 +58,38 @@ h1, h2, h3 {
 
 .button:hover {
     background: #333;
+}
+.top-bar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.top-bar nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.top-bar nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    padding-top: 60px; /* Adjust this value if needed */
 }
