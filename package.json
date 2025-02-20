@@ -1,0 +1,21 @@
+{
+  "name": "band-website",
+  "version": "1.0.0",
+  "description": "A website for the band showcasing their music, events, and information.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "band",
+    "music",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
