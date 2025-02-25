@@ -1,3 +1,66 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px; /* Accommodate the fixed navbar */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Top navigation bar */
+.top-bar {
+  background: #000;
+  color: #fff;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.top-bar nav {
+  display: flex;
+}
+
+.top-bar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.top-bar nav a:hover {
+  color: #ccc;
+}
+
 /* Upcoming Merchandise Section Styles */
 .upcoming-merch {
     margin: 60px 0;
