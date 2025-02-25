@@ -13,4 +13,5 @@
 
 5. Contact us page updated
 
-6. Photoes section
+6. Photos section
+
