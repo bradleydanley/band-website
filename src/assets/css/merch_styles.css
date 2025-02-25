@@ -1,0 +1,97 @@
+/* Upcoming Merchandise Section Styles */
+.upcoming-merch {
+    margin: 60px 0;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .upcoming-merch h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .merch-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .merch-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .merch-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .merch-image {
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+  }
+  
+  .merch-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .merch-details {
+    padding: 20px;
+  }
+  
+  .merch-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #222;
+  }
+  
+  .release-date {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .merch-description {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .notify-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .notify-btn:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .merch-container {
+      grid-template-columns: 1fr;
+    }
+  }
