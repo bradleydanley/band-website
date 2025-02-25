@@ -6,3 +6,160 @@
     <title>Upcoming Shows</title>
     <link rel="stylesheet" href="../assets/css/shows_styles.css">
 </head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <h1>Band Name</h1>
+            </div>
+            <div class="top-bar-right">
+                <nav>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                    <li><a href="../pages/merch.html">Merch</a></li>
+                    <li><a href="../pages/shows.html">Shows</a></li>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <h1>Upcoming Shows</h1>
+        <p>Come see us live! Check out our tour dates and get your tickets before they sell out.</p>
+        
+        <!-- Tour Dates Section -->
+        <section class="tour-dates">
+            <!-- Show 1 -->
+            <div class="show-card">
+                <div class="show-date">
+                    <div class="month">MAR</div>
+                    <div class="day">15</div>
+                    <div class="year">2025</div>
+                </div>
+                <div class="show-info">
+                    <h2>The Underground Venue</h2>
+                    <p class="location">New York, NY</p>
+                    <p class="additional-info">With special guests The Openers</p>
+                </div>
+                <div class="show-action">
+                    <span class="ticket-status available">Tickets Available</span>
+                    <a href="#" class="ticket-button">Get Tickets</a>
+                </div>
+            </div>
+
+            <!-- Show 2 -->
+            <div class="show-card">
+                <div class="show-date">
+                    <div class="month">MAR</div>
+                    <div class="day">22</div>
+                    <div class="year">2025</div>
+                </div>
+                <div class="show-info">
+                    <h2>Music Hall</h2>
+                    <p class="location">Boston, MA</p>
+                    <p class="additional-info">Album release party</p>
+                </div>
+                <div class="show-action">
+                    <span class="ticket-status available">Tickets Available</span>
+                    <a href="#" class="ticket-button">Get Tickets</a>
+                </div>
+            </div>
+
+            <!-- Show 3 -->
+            <div class="show-card">
+                <div class="show-date">
+                    <div class="month">APR</div>
+                    <div class="day">05</div>
+                    <div class="year">2025</div>
+                </div>
+                <div class="show-info">
+                    <h2>The Echo</h2>
+                    <p class="location">Los Angeles, CA</p>
+                    <p class="additional-info">21+ show</p>
+                </div>
+                <div class="show-action">
+                    <span class="ticket-status limited">Limited Tickets</span>
+                    <a href="#" class="ticket-button">Get Tickets</a>
+                </div>
+            </div>
+
+            <!-- Show 4 -->
+            <div class="show-card">
+                <div class="show-date">
+                    <div class="month">APR</div>
+                    <div class="day">12</div>
+                    <div class="year">2025</div>
+                </div>
+                <div class="show-info">
+                    <h2>The Fillmore</h2>
+                    <p class="location">San Francisco, CA</p>
+                    <p class="additional-info">All ages welcome</p>
+                </div>
+                <div class="show-action">
+                    <span class="ticket-status limited">Limited Tickets</span>
+                    <a href="#" class="ticket-button">Get Tickets</a>
+                </div>
+            </div>
+
+            <!-- Show 5 -->
+            <div class="show-card">
+                <div class="show-date">
+                    <div class="month">APR</div>
+                    <div class="day">20</div>
+                    <div class="year">2025</div>
+                </div>
+                <div class="show-info">
+                    <h2>Metro</h2>
+                    <p class="location">Chicago, IL</p>
+                    <p class="additional-info">With special guests The Supporters</p>
+                </div>
+                <div class="show-action">
+                    <span class="ticket-status soldout">Sold Out</span>
+                    <a href="#" class="waitlist-button">Join Waitlist</a>
+                </div>
+            </div>
+
+            <!-- Show 6 -->
+            <div class="show-card">
+                <div class="show-date">
+                    <div class="month">MAY</div>
+                    <div class="day">02</div>
+                    <div class="year">2025</div>
+                </div>
+                <div class="show-info">
+                    <h2>9:30 Club</h2>
+                    <p class="location">Washington, DC</p>
+                    <p class="additional-info">Doors open at 7PM</p>
+                </div>
+                <div class="show-action">
+                    <span class="ticket-status available">Tickets Available</span>
+                    <a href="#" class="ticket-button">Get Tickets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Shows Toggle -->
+        <div class="past-shows-toggle">
+            <button id="view-past-shows">View Past Shows</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Band Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for toggling past shows (optional) -->
+    <script>
+        document.getElementById('view-past-shows').addEventListener('click', function() {
+            alert('Past shows functionality would appear here');
+        });
+    </script>
+</body>
+</html>

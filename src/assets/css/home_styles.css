@@ -3,6 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    margin-top: 175px; /* Changed padding-top to margin-top */
 }
 
 header {
@@ -64,8 +65,8 @@ h1, h2, h3 {
     color: #fff;
     padding: 10px 0;
     position: fixed;
-    width: 1440px; /* Changed from 100% to 1440px */
-    height: 120px; /* Added height */
+    width: 100%; /* Changed from 100% to 1440px */
+    height: 20%; /* Added height */
     top: 0;
     z-index: 1000;
 }
