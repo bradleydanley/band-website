@@ -1,0 +1,435 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.site-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #888;
+}
+
+/* Header and Navigation */
+header {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.logo h1 {
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #000;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+nav ul li a.active:after,
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+/* Page Hero Section */
+.page-hero {
+    position: relative;
+    margin: 30px 0 60px;
+    overflow: hidden;
+}
+
+.page-hero img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+
+.page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.page-title h2 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin: 0;
+}
+
+/* Shows Container and Cards */
+.upcoming-shows,
+.past-shows {
+    padding: 40px 0;
+}
+
+.past-shows {
+    background-color: #f9f9f9;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.toggle-button {
+    margin-left: 20px;
+    background: none;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.shows-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.show-card {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.show-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.show-card.past {
+    opacity: 0.7;
+}
+
+.show-date {
+    width: 120px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.date-box {
+    text-align: center;
+}
+
+.month {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.day {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.year {
+    display: block;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.show-details {
+    flex: 1;
+    padding: 30px;
+    position: relative;
+}
+
+.location {
+    font-weight: 400;
+    color: #777;
+}
+
+.additional-info {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.ticket-status {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.available {
+    background-color: #e6f7e6;
+    color: #2c7623;
+}
+
+.limited {
+    background-color: #fff7e6;
+    color: #b78105;
+}
+
+.soldout {
+    background-color: #ffebeb;
+    color: #c53030;
+}
+
+.past-event {
+    background-color: #eee;
+    color: #777;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.button.waitlist {
+    background-color: #666;
+}
+
+.button.waitlist:hover {
+    background-color: #888;
+}
+
+/* Hidden class for past shows toggle */
+.hidden {
+    display: none;
+}
+
+/* Tour Updates Section */
+.tour-updates {
+    padding: 80px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.update-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.update-container h2 {
+    color: #fff;
+}
+
+.update-container p {
+    margin-bottom: 30px;
+}
+
+.update-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.update-form input {
+    padding: 12px 20px;
+    width: 300px;
+    border: none;
+    font-size: 1rem;
+}
+
+.update-form .button {
+    border: none;
+}
+
+/* Footer */
+footer {
+    padding: 60px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.social {
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    margin: 0 15px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .page-title h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    .page-title h2 {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+    
+    .update-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .update-form input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .show-card {
+        flex-direction: column;
+    }
+    
+    .show-date {
+        width: 100%;
+        padding: 15px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .date-box {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .month, .day, .year {
+        margin: 0 5px;
+    }
+    
+    .show-details {
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+}

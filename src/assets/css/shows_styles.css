@@ -3,28 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding-top: 60px; /* Accommodate the fixed navbar */
-}
-
-.container {
+    padding-top: 90px; /* Accommodate the fixed navbar */
+  }
+  
+  .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-/* Top navigation bar */
+  }
+  
+  /* Top navigation bar */
 .top-bar {
     background: #000;
     color: #fff;
-    height: 50px;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,7 +58,7 @@ body {
 }
 
 .top-bar nav a:hover {
-    color: #ccc;
+    color: #4a5a9967;
 }
 
 /* Main content area */

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows - Last Common Ancestor</title>
+    <link rel="stylesheet" href="showsmock_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-container">
+        <!-- Header with Logo -->
+        <header>
+            <div class="logo">
+                <h1>LAST COMMON ANCESTOR</h1>
+            </div>
+            <!-- Minimal Navigation -->
+            <nav>
+                ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">SHOWS</a></li>
+                <li><a href="#" class="active">MOCKSHOWS</a></li>
+                <li><a href="#">MERCH</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <!-- Shows Hero Section -->
+        <div class="page-hero">
+            <img src="https://via.placeholder.com/1600x700" alt="Last Common Ancestor Live Performance">
+            <div class="page-title">
+                <h2>SHOWS</h2>
+            </div>
+        </div>
+
+        <!-- Upcoming Shows Section -->
+        <section class="upcoming-shows">
+            <h2>UPCOMING SHOWS</h2>
+            <div class="shows-container">
+                <div class="show-card">
+                    <div class="show-date">
+                        <div class="date-box">
+                            <span class="month">MAR</span>
+                            <span class="day">15</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="show-details">
+                        <h3>THE UNDERGROUND VENUE</h3>
+                        <p class="location">New York, NY</p>
+                        <p class="additional-info">With special guests The Openers</p>
+                        <div class="ticket-status available">Tickets Available</div>
+                        <a href="#" class="button">GET TICKETS</a>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-date">
+                        <div class="date-box">
+                            <span class="month">MAR</span>
+                            <span class="day">22</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="show-details">
+                        <h3>MUSIC HALL</h3>
+                        <p class="location">Boston, MA</p>
+                        <p class="additional-info">Album release party</p>
+                        <div class="ticket-status available">Tickets Available</div>
+                        <a href="#" class="button">GET TICKETS</a>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-date">
+                        <div class="date-box">
+                            <span class="month">APR</span>
+                            <span class="day">05</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="show-details">
+                        <h3>THE ECHO</h3>
+                        <p class="location">Los Angeles, CA</p>
+                        <p class="additional-info">21+ show</p>
+                        <div class="ticket-status limited">Limited Tickets</div>
+                        <a href="#" class="button">GET TICKETS</a>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-date">
+                        <div class="date-box">
+                            <span class="month">APR</span>
+                            <span class="day">12</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="show-details">
+                        <h3>THE FILLMORE</h3>
+                        <p class="location">San Francisco, CA</p>
+                        <p class="additional-info">All ages welcome</p>
+                        <div class="ticket-status limited">Limited Tickets</div>
+                        <a href="#" class="button">GET TICKETS</a>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-date">
+                        <div class="date-box">
+                            <span class="month">APR</span>
+                            <span class="day">20</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="show-details">
+                        <h3>METRO</h3>
+                        <p class="location">Chicago, IL</p>
+                        <p class="additional-info">With special guests The Supporters</p>
+                        <div class="ticket-status soldout">Sold Out</div>
+                        <a href="#" class="button waitlist">JOIN WAITLIST</a>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-date">
+                        <div class="date-box">
+                            <span class="month">MAY</span>
+                            <span class="day">02</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="show-details">
+                        <h3>9:30 CLUB</h3>
+                        <p class="location">Washington, DC</p>
+                        <p class="additional-info">Doors open at 7PM</p>
+                        <div class="ticket-status available">Tickets Available</div>
+                        <a href="#" class="button">GET TICKETS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Shows Section -->
+        <section class="past-shows">
+            <div class="section-header">
+                <h2>PAST SHOWS</h2>
+                <button class="toggle-button" id="toggle-past-shows">SHOW</button>
+            </div>
+            
+            <div class="shows-container past-shows-container hidden">
+                <div class="show-card past">
+                    <div class="show-date">
+                        <div class="date-box">
+                            <span class="month">FEB</span>
+                            <span class="day">14</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="show-details">
+                        <h3>THE BLUE NOTE</h3>
+                        <p class="location">Columbia, MO</p>
+                        <p class="additional-info">Valentine's Day Special</p>
+                        <div class="ticket-status past-event">Past Event</div>
+                    </div>
+                </div>
+
+                <div class="show-card past">
+                    <div class="show-date">
+                        <div class="date-box">
+                            <span class="month">JAN</span>
+                            <span class="day">20</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="show-details">
+                        <h3>ROSE MUSIC HALL</h3>
+                        <p class="location">Columbia, MO</p>
+                        <p class="additional-info">Album Preview Show</p>
+                        <div class="ticket-status past-event">Past Event</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour Updates Section -->
+        <section class="tour-updates">
+            <div class="update-container">
+                <h2>TOUR UPDATES</h2>
+                <p>Sign up to receive notifications about new shows in your area.</p>
+                <form class="update-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit" class="button">SUBSCRIBE</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="social">
+                <a href="#" class="social-icon">INSTAGRAM</a>
+                <a href="#" class="social-icon">YOUTUBE</a>
+                <a href="#" class="social-icon">SPOTIFY</a>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2025 LAST COMMON ANCESTOR. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to toggle past shows
+        document.getElementById('toggle-past-shows').addEventListener('click', function() {
+            const pastShowsContainer = document.querySelector('.past-shows-container');
+            const toggleButton = document.getElementById('toggle-past-shows');
+            
+            pastShowsContainer.classList.toggle('hidden');
+            toggleButton.textContent = pastShowsContainer.classList.contains('hidden') ? 'SHOW' : 'HIDE';
+        });
+    </script>
+</body>
+</html>

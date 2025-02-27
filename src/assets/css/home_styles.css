@@ -1,74 +1,78 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    padding: 0;
     color: #333;
-    margin-top: 175px; /* Changed padding-top to margin-top */
+    padding-top: 90px; /* Accommodate the fixed navbar */
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-nav {
-    margin: 80px 0;
+.logo img {
+    height: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
-    color: #333;
     text-decoration: none;
-    margin: 0 15px;
+    color: #fff;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.hero {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    padding: 60px 20px;
 }
 
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.button {
-    display: inline-block;
-    font-size: 16px;
-    color: #fff;
-    background: #e8491d;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background: #333;
-}
+/* Top navigation bar */
 .top-bar {
-    background: #000000;
+    background: #000;
     color: #fff;
-    padding: 10px 0;
+    height: 80px;
     position: fixed;
-    width: 100%; /* Changed from 100% to 1440px */
-    height: 20%; /* Added height */
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
+    display: flex;
+    align-items: center;
 }
 
 .top-bar .container {
@@ -78,20 +82,22 @@ h1, h2, h3 {
 }
 
 .top-bar h1 {
+    font-size: 20px;
     margin: 0;
-    font-size: 24px;
+}
+
+.top-bar nav {
+    display: flex;
 }
 
 .top-bar nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s;
 }
 
 .top-bar nav a:hover {
-    text-decoration: underline;
-}
-
-body {
-    padding-top: 60px; /* Adjust this value if needed */
+    color: #4a5a9967;
 }
