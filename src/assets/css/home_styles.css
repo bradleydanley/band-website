@@ -53,6 +53,7 @@ nav a {
 
 section {
     padding: 60px 20px;
+    margin-top: 725px; /* Adjust this value to create space below the hero image */
 }
 
 footer {
@@ -100,4 +101,26 @@ footer {
 
 .top-bar nav a:hover {
     color: #4a5a9967;
+}
+
+/* About section styles */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
