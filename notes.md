@@ -15,3 +15,17 @@
 
 6. Photos section
 
+
+
+3/4 notes
+-Made a universal Nav bar
+-added upcoming shows section to the home page
+    -put text on the hero image
+-added gallery to nav bar and moved shows to the right
+-added logos to the images folder
+
+For next time:
+-Logo is still messed up (not too big of a deal)
+-add links to socials on home page, footer, etc
+-post the edit to youtube
+-

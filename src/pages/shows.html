@@ -4,25 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Band Website</title>
+    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
     <link rel="stylesheet" href="../assets/css/shows_styles.css">
 </head>
 <body>
-    <header class="top-bar">
-        <div class="container">
-            <div class="logo">
-                <img src="../images/invertedlogo.png" alt="Band Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Top Bar -->
+    <div id="navbar-container"></div>
 
     <!-- Main Content -->
     <div class="container main-content">
@@ -152,6 +139,9 @@
             <p>&copy; 2025 Band Name. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Include the navbar loader script -->
+    <script src="../assets/js/navbar-loader.js"></script>
 
     <!-- Simple JavaScript for toggling past shows (optional) -->
     <script>

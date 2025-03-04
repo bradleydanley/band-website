@@ -1,8 +1,22 @@
-/* Standardized navigation bar styles */
-.top-bar {
+/* navbar-styles.css - Save this as a new file in src/assets/css/ */
+
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding-top: 100px; /* To account for the fixed navbar */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar styling */
+  .top-bar {
     background: #000;
     color: #fff;
-    height: 80px;
+    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,79 +24,78 @@
     z-index: 1000;
     display: flex;
     align-items: center;
-}
-
-.top-bar .container {
+  }
+  
+  .top-bar .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo img {
+  }
+  
+  /* Logo styling */
+  .top-bar .logo img {
     height: 60px;
-    display: block;
-}
-
-.top-bar nav ul {
-    display: flex;
+    width: auto;
+  }
+  
+  /* Navigation styling */
+  .top-bar nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.top-bar nav li {
-    margin: 0;
-    padding: 0;
-}
-
-.top-bar nav a {
+    display: flex;
+  }
+  
+  .top-bar nav ul li {
+    margin-left: 20px;
+  }
+  
+  .top-bar nav ul li a {
     color: #fff;
     text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
+    font-size: 16px;
     transition: color 0.3s;
-    display: block;
-    padding: 5px 0;
-}
-
-.top-bar nav a:hover {
-    color: #ccc;
-}
-
-/* Adjust body padding to account for fixed navbar */
-body {
-    padding-top: 80px;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
+  }
+  
+  .top-bar nav ul li a:hover {
+    color: #4a5a99;
+  }
+  
+  /* Active link styling */
+  .top-bar nav ul li a.active {
+    color: #4a5a99;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
     .top-bar {
-        height: auto;
-        padding: 10px 0;
+      height: auto;
+      
     }
     
     .top-bar .container {
-        flex-direction: column;
-    }
-    
-    .logo {
-        margin-bottom: 10px;
+      flex-direction: column;
     }
     
     .top-bar nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+      margin-top: 0px;
     }
     
-    .top-bar nav a {
-        margin: 5px 10px;
+    .top-bar nav ul li {
+      margin: 0 0px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .top-bar nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
     }
     
-    body {
-        padding-top: 120px;
+    .top-bar nav ul li {
+      margin: 0px 0px;
     }
-}
+  }

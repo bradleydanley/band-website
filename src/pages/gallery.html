@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Last Common Ancestor</title>
+    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
+    <link rel="stylesheet" href="../assets/css/gallery_styles.css">
+    
+    <!-- Lightbox library for photo enlargement -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <!-- Nav Bar-->
+    <div id="navbar-container"></div>
+
+    <!-- Main Content -->
+    <main class="gallery-content">
+        <!-- Gallery Navigation -->
+        <div class="gallery-nav">
+            <button class="gallery-tab active" data-target="photos">Photos</button>
+            <button class="gallery-tab" data-target="videos">Videos</button>
+        </div>
+        
+        <!-- Photos Section -->
+        <section id="photos" class="gallery-section active">
+            <h2>Performance Photos</h2>
+            
+            <div class="gallery-grid">
+                <!-- Example photo items - replace with your actual images -->
+                <div class="gallery-item">
+                    <a href="../images/gallery/performance1-large.jpg" data-lightbox="band-photos" data-title="Live at The Blue Note - March 2024">
+                        <img src="../images/gallery/performance1-thumb.jpg" alt="Live at The Blue Note">
+                        <div class="image-caption">Live at The Blue Note</div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="../images/gallery/performance2-large.jpg" data-lightbox="band-photos" data-title="Rose Music Hall - January 2025">
+                        <img src="../images/gallery/performance2-thumb.jpg" alt="Rose Music Hall">
+                        <div class="image-caption">Rose Music Hall</div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="../images/gallery/performance3-large.jpg" data-lightbox="band-photos" data-title="Columbia Festival - Summer 2024">
+                        <img src="../images/gallery/performance3-thumb.jpg" alt="Columbia Festival">
+                        <div class="image-caption">Columbia Festival</div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="../images/gallery/performance4-large.jpg" data-lightbox="band-photos" data-title="Mizzou Showcase - Fall 2024">
+                        <img src="../images/gallery/performance4-thumb.jpg" alt="Mizzou Showcase">
+                        <div class="image-caption">Mizzou Showcase</div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="../images/gallery/performance5-large.jpg" data-lightbox="band-photos" data-title="Local Venue Night - December 2024">
+                        <img src="../images/gallery/performance5-thumb.jpg" alt="Local Venue Night">
+                        <div class="image-caption">Local Venue Night</div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="../images/gallery/performance6-large.jpg" data-lightbox="band-photos" data-title="Album Release Party - February 2025">
+                        <img src="../images/gallery/performance6-thumb.jpg" alt="Album Release Party">
+                        <div class="image-caption">Album Release Party</div>
+                    </a>
+                </div>
+            </div>
+            
+            <h2>Behind the Scenes</h2>
+            
+            <div class="gallery-grid">
+                <!-- Example behind the scenes photos -->
+                <div class="gallery-item">
+                    <a href="../images/gallery/bts1-large.jpg" data-lightbox="behind-scenes" data-title="Studio Session - Recording our first EP">
+                        <img src="../images/gallery/bts1-thumb.jpg" alt="Studio Session">
+                        <div class="image-caption">Studio Session</div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="../images/gallery/bts2-large.jpg" data-lightbox="behind-scenes" data-title="Rehearsal Night - Getting ready for the tour">
+                        <img src="../images/gallery/bts2-thumb.jpg" alt="Rehearsal Night">
+                        <div class="image-caption">Rehearsal Night</div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="../images/gallery/bts3-large.jpg" data-lightbox="behind-scenes" data-title="Songwriting Session - Creating new material">
+                        <img src="../images/gallery/bts3-thumb.jpg" alt="Songwriting Session">
+                        <div class="image-caption">Songwriting Session</div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href="../images/gallery/bts4-large.jpg" data-lightbox="behind-scenes" data-title="Road Trip - On the way to our gig in Kansas City">
+                        <img src="../images/gallery/bts4-thumb.jpg" alt="Road Trip">
+                        <div class="image-caption">Road Trip</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Videos Section -->
+        <section id="videos" class="gallery-section">
+            <h2>Live Performances</h2>
+            
+            <div class="video-grid">
+                <!-- Example video items - replace with your actual videos -->
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/your-video-id-1" title="Live at The Blue Note" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>"Evolution" - Live at The Blue Note</h3>
+                    <p>March 15, 2024</p>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/your-video-id-2" title="Album Release Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>"Primordial Soup" - Album Release Show</h3>
+                    <p>January 20, 2025</p>
+                </div>
+            </div>
+            
+            <h2>Music Videos</h2>
+            
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/your-video-id-3" title="Official Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>"Ancestral Call" - Official Music Video</h3>
+                    <p>December 12, 2024</p>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/your-video-id-4" title="Lyric Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>"Evolutionary Leap" - Lyric Video</h3>
+                    <p>November 5, 2024</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Last Common Ancestor. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/" target="_blank">Instagram</a>
+                <a href="https://youtube.com/" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include the navbar script -->
+    <script src="../assets/js/navbar-loader.js"></script>
+    
+    <!-- Lightbox script for photo enlargement -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <!-- Gallery functionality script -->
+    <script src="../assets/js/gallery.js"></script>
+</body>
+</html>

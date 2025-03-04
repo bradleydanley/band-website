@@ -6,54 +6,39 @@ body {
     padding-top: 90px; /* Accommodate the fixed navbar */
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
 
-.logo img {
-    height: 120px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
 
 .hero {
     position: relative;
     color: white;
     text-align: center;
-    padding: 100px 20px;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
     object-fit: cover;
+    position: relative;
+}
+.hero-text {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 80%;
 }
 
 .hero h1, .hero p {
-    position: relative;
-    z-index: 1;
+    margin: 0;
+    padding: 0px;
 }
 
 section {
     padding: 60px 20px;
-    margin-top: 725px; /* Adjust this value to create space below the hero image */
+    margin-top: 0px; /* Adjust this value to create space below the hero image */
 }
 
 footer {
@@ -62,46 +47,7 @@ footer {
     background-color: #f4f4f4;
 }
 
-/* Top navigation bar */
-.top-bar {
-    background: #000;
-    color: #fff;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-}
 
-.top-bar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.top-bar h1 {
-    font-size: 20px;
-    margin: 0;
-}
-
-.top-bar nav {
-    display: flex;
-}
-
-.top-bar nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
-    transition: color 0.3s;
-}
-
-.top-bar nav a:hover {
-    color: #4a5a9967;
-}
 
 /* About section styles */
 .about-section {
@@ -123,4 +69,126 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+/* Upcoming shows */
+.upcoming-shows-home {
+    background-color: #f9f9f9;
+    padding: 0px 0;
+    text-align: center;
+    margin-top: 0px; /* Adjust based on your layout */
+}
+
+.upcoming-shows-home h2 {
+    margin-bottom: 0px;
+    color: #222;
+    font-size: 28px;
+}
+
+.upcoming-shows-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.home-show-card {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.home-show-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.show-date-home {
+    background: #333;
+    color: white;
+    padding: 15px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.show-info-home {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.show-info-home h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.show-info-home p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.show-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+    min-width: 100px;
+}
+
+.show-link-btn:hover {
+    background: #ddd;
+}
+
+.view-all-shows {
+    margin-top: 25px;
+}
+
+.view-all-btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.view-all-btn:hover {
+    background: #555;
+}
+
+.loading-text {
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .home-show-card {
+        flex-direction: column;
+    }
+    
+    .show-date-home {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .show-link-btn {
+        width: 100%;
+        padding: 10px 0;
+    }
 }

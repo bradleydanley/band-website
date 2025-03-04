@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Band Website</title>
+    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
     <link rel="stylesheet" href="../assets/css/home_styles.css">
 </head>
 <body>
-    <header class="top-bar">
-        <div class="container">
-            <div class="logo">
-                <img src="../images/logo.png" alt="Band Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Top Bar -->
+    <div id="navbar-container"></div>
 
     <div class="hero">
         <img src="../images/Action_Shot.jpeg" alt="Action Shot" class="hero-image">
-        <h1>Welcome to Our Band</h1>
-        <p>Experience the best music with us</p>
+        <div class ="hero-text">
+            <h1>Last Common Ancestor</h1>
+            <p>Est. 2024, Columbia MO</p>
+        </div>
     </div>
+
+    <!-- Upcoming Shows Section (JavasScript)-->
+    <section id="upcoming-shows-section" class="upcoming-shows-home">
+        <div class="container">
+            <h2>Coming Up Soon</h2>
+            <div id="upcoming-shows-list" class="upcoming-shows-list">
+                <!-- Dynamic content will be loaded here by JavaScript -->
+                <p class="loading-text">Loading upcoming shows...</p>
+            </div>
+            <div class="view-all-shows">
+                <a href="shows.html" class="view-all-btn">View All Shows</a>
+            </div>
+        </div>
+    </section>
 
     <section id="about" class="about-section">
         <div class="about-content">
@@ -58,5 +61,11 @@
     <footer>
         <p>&copy; 2025 Last Common Ancestor. All rights reserved.</p>
     </footer>
+
+    <!-- Include the navbar loader script -->
+    <script src="../assets/js/navbar-loader.js"></script>
+
+    <!-- Upcoming Shows JavaScript Link-->
+    <script src="../assets/js/upcoming-shows.js"></script>
 </body>
 </html>
