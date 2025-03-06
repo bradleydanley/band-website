@@ -1,101 +1,111 @@
-/* navbar-styles.css - Save this as a new file in src/assets/css/ */
-
 /* Reset some basic elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    padding-top: 100px; /* To account for the fixed navbar */
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Navbar styling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body padding to account for fixed navbar */
+body {
+  padding-top: 100px; /* Consistent value across all pages */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar styling with fixed dimensions */
+.top-bar {
+  background: #000;
+  color: #fff;
+  height: 100px; /* Fixed height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* Ensure container takes full height */
+}
+
+/* Logo styling with fixed dimensions */
+.top-bar .logo img {
+  height: 60px;
+  width: auto;
+  display: block; /* Prevent inline spacing issues */
+}
+
+/* Navigation styling */
+.top-bar nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0; /* Explicitly remove any margin */
+  height: 100%; /* Full height */
+  align-items: center;
+}
+
+.top-bar nav ul li {
+  margin-left: 20px;
+  height: 100%; /* Full height for list items */
+  display: flex;
+  align-items: center;
+}
+
+.top-bar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  padding: 10px 0; /* Consistent vertical padding */
+  display: block;
+}
+
+.top-bar nav ul li a:hover {
+  color: #4a5a99;
+}
+
+/* Active link styling */
+.top-bar nav ul li a.active {
+  color: #4a5a99;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .top-bar {
-    background: #000;
-    color: #fff;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
+    padding: 10px 0;
   }
   
   .top-bar .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   
-  /* Logo styling */
-  .top-bar .logo img {
-    height: 60px;
-    width: auto;
-  }
-  
-  /* Navigation styling */
   .top-bar nav ul {
-    list-style: none;
-    display: flex;
+    margin-top: 10px;
   }
   
   .top-bar nav ul li {
-    margin-left: 20px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-  .top-bar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
+  .top-bar nav ul li {
+    margin: 5px 10px;
   }
-  
-  .top-bar nav ul li a:hover {
-    color: #4a5a99;
-  }
-  
-  /* Active link styling */
-  .top-bar nav ul li a.active {
-    color: #4a5a99;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .top-bar {
-      height: auto;
-      
-    }
-    
-    .top-bar .container {
-      flex-direction: column;
-    }
-    
-    .top-bar nav ul {
-      margin-top: 0px;
-    }
-    
-    .top-bar nav ul li {
-      margin: 0 0px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .top-bar nav ul {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .top-bar nav ul li {
-      margin: 0px 0px;
-    }
-  }
+}
+

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Preload the navbar CSS -->
+    <link rel="preload" href="../assets/css/navbar_styles.css" as="style">
+    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
+
+    <!-- Preload and execute the navbar script as soon as possible -->
+    <script src="../assets/js/navbar-loader.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Band Website</title>
@@ -36,10 +42,13 @@
     <section id="about" class="about-section">
         <div class="about-content">
             <h2>About Us</h2>
-            <p>Welcome to the official website of Last Common Ancestor. We are a group of Mizzou students and alum who are invested in making the best music possible.</p>
+            <p>Welcome to the official website of Last Common Ancestor. We are a group of Mizzou students and alum who came together to make music.
+                We have been playing together since 2024 and have been performing at various venues in Columbia, MO. 
+                Our music is a blend of 90s-2000s rock, shoegazey and psychedlic influences. We are currently working on our debut album.
+            </p>
         </div>
         <div class="about-image">
-            <img src="../images/about_image.jpg" alt="About Us Image">
+            <img src="../images/logo.png" alt="About Us Image">
         </div>
     </section>
 

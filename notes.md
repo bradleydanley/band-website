@@ -29,3 +29,10 @@ For next time:
 -add links to socials on home page, footer, etc
 -post the edit to youtube
 -
+
+3/6 notes:
+-Uploaded youtube video
+-updated contact page
+-updated shows page
+-tried to get the shows live-still needs work
+-added links on shows page

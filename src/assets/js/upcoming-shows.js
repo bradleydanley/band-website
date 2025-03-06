@@ -1,5 +1,3 @@
-// upcoming-shows.js
-
 // Function to parse date from show card format (e.g., MAR 15 2025)
 function parseShowDate(month, day, year) {
     const monthMap = {
@@ -43,79 +41,50 @@ function createShowCard(show) {
     return showCard;
 }
 
+// Function to fetch shows data from shows.html
+async function fetchShowsData() {
+    try {
+        const response = await fetch('../../pages/shows.html');
+        const text = await response.text();
+        console.log('Fetched shows.html:', text);
+        
+        // Parse the HTML to extract shows data
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, 'text/html');
+        
+        // Extract show data from the HTML structure
+        const showCards = doc.querySelectorAll('.show-card');
+        const shows = Array.from(showCards).map(card => {
+            const month = card.querySelector('.show-date .month').textContent.trim();
+            const day = card.querySelector('.show-date .day').textContent.trim();
+            const year = card.querySelector('.show-date .year').textContent.trim();
+            const venue = card.querySelector('.show-info h2').textContent.trim();
+            const location = card.querySelector('.show-info .location').textContent.trim();
+            
+            return { month, day, year, venue, location };
+        });
+        
+        console.log('Parsed shows data:', shows);
+        return shows;
+    } catch (error) {
+        console.error('Error fetching shows data:', error);
+        return [];
+    }
+}
+
 // Main function to load upcoming shows on the home page
-function loadUpcomingShows() {
+async function loadUpcomingShows() {
     // Only run on the home page
     if (!document.getElementById('upcoming-shows-section')) {
         return;
     }
     
-    // Shows data - you would normally fetch this from an API or another source
-    // For now, we'll hard-code the shows from shows.html
-    const shows = [
-        { 
-            venue: "The Underground Venue",
-            location: "New York, NY",
-            date: parseShowDate("MAR", "15", "2025"),
-            info: "With special guests The Openers",
-            status: "available"
-        },
-        { 
-            venue: "Music Hall",
-            location: "Boston, MA",
-            date: parseShowDate("MAR", "22", "2025"),
-            info: "Album release party",
-            status: "available"
-        },
-        { 
-            venue: "The Echo",
-            location: "Los Angeles, CA",
-            date: parseShowDate("APR", "05", "2025"),
-            info: "21+ show",
-            status: "limited"
-        },
-        { 
-            venue: "The Fillmore",
-            location: "San Francisco, CA",
-            date: parseShowDate("APR", "12", "2025"),
-            info: "All ages welcome",
-            status: "limited"
-        },
-        { 
-            venue: "Metro",
-            location: "Chicago, IL",
-            date: parseShowDate("APR", "20", "2025"),
-            info: "With special guests The Supporters",
-            status: "soldout"
-        },
-        { 
-            venue: "9:30 Club",
-            location: "Washington, DC",
-            date: parseShowDate("MAY", "02", "2025"),
-            info: "Doors open at 7PM",
-            status: "available"
-        }
-    ];
-    
-    // For testing purposes: create a show that's within the next two weeks
-    // This simulates a show that would appear within our date range
-    const today = new Date();
-    const nextWeek = new Date();
-    nextWeek.setDate(today.getDate() + 7);
-    
-    const testShow = {
-        venue: "The Local Venue",
-        location: "Columbia, MO",
-        date: nextWeek,
-        info: "Hometown show",
-        status: "available"
-    };
-    
-    shows.push(testShow);
+    // Fetch shows data
+    const shows = await fetchShowsData();
     
     // Filter shows to only include those within the next two weeks
-    const upcomingShows = shows.filter(show => isWithinTwoWeeks(show.date));
-    
+    const upcomingShows = shows.filter(show => isWithinTwoWeeks(parseShowDate(show.month, show.day, show.year)));
+
     // Get the container for upcoming shows
     const upcomingShowsContainer = document.getElementById('upcoming-shows-list');
     if (!upcomingShowsContainer) {

@@ -4,102 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Last Common Ancestor</title>
+    <!-- Preload navbar resources -->
+    <link rel="preload" href="../assets/css/navbar_styles.css" as="style">
     <link rel="stylesheet" href="../assets/css/navbar_styles.css">
+    <link rel="stylesheet" href="../assets/css/footer_styles.css">
+    <script src="../assets/js/navbar-loader.js" async></script>
+    <script src="../assets/js/footer-loader.js" async></script>
+    
+    <!-- Gallery page styles -->
     <link rel="stylesheet" href="../assets/css/gallery_styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Lightbox library for photo enlargement -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
-    <!-- Nav Bar-->
+    <!-- Navbar -->
     <div id="navbar-container"></div>
 
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Gallery</h1>
+            <p>Performances, Behind the Scenes, and More</p>
+        </div>
+    </div>
+
     <!-- Main Content -->
-    <main class="gallery-content">
+    <main class="gallery-container">
         <!-- Gallery Navigation -->
-        <div class="gallery-nav">
-            <button class="gallery-tab active" data-target="photos">Photos</button>
-            <button class="gallery-tab" data-target="videos">Videos</button>
+        <div class="gallery-tabs">
+            <button class="tab-btn active" data-target="photos">Photos</button>
+            <button class="tab-btn" data-target="videos">Videos</button>
         </div>
         
         <!-- Photos Section -->
         <section id="photos" class="gallery-section active">
-            <h2>Performance Photos</h2>
+            <div class="section-header">
+                <h2>Performance Photos</h2>
+                <p>Highlights from our recent shows and events</p>
+            </div>
             
             <div class="gallery-grid">
-                <!-- Example photo items - replace with your actual images -->
+                <!-- Images would be replaced with actual band photos -->
                 <div class="gallery-item">
-                    <a href="../images/gallery/performance1-large.jpg" data-lightbox="band-photos" data-title="Live at The Blue Note - March 2024">
+                    <a href="../images/gallery/performance1-large.jpg" data-lightbox="performances" data-title="Live at The Blue Note - March 2024">
                         <img src="../images/gallery/performance1-thumb.jpg" alt="Live at The Blue Note">
-                        <div class="image-caption">Live at The Blue Note</div>
+                        <div class="overlay">
+                            <div class="caption">Live at The Blue Note</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="gallery-item">
-                    <a href="../images/gallery/performance2-large.jpg" data-lightbox="band-photos" data-title="Rose Music Hall - January 2025">
+                    <a href="../images/gallery/performance2-large.jpg" data-lightbox="performances" data-title="Rose Music Hall - January 2025">
                         <img src="../images/gallery/performance2-thumb.jpg" alt="Rose Music Hall">
-                        <div class="image-caption">Rose Music Hall</div>
+                        <div class="overlay">
+                            <div class="caption">Rose Music Hall</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="gallery-item">
-                    <a href="../images/gallery/performance3-large.jpg" data-lightbox="band-photos" data-title="Columbia Festival - Summer 2024">
+                    <a href="../images/gallery/performance3-large.jpg" data-lightbox="performances" data-title="Columbia Festival - Summer 2024">
                         <img src="../images/gallery/performance3-thumb.jpg" alt="Columbia Festival">
-                        <div class="image-caption">Columbia Festival</div>
+                        <div class="overlay">
+                            <div class="caption">Columbia Festival</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="gallery-item">
-                    <a href="../images/gallery/performance4-large.jpg" data-lightbox="band-photos" data-title="Mizzou Showcase - Fall 2024">
+                    <a href="../images/gallery/performance4-large.jpg" data-lightbox="performances" data-title="Mizzou Showcase - Fall 2024">
                         <img src="../images/gallery/performance4-thumb.jpg" alt="Mizzou Showcase">
-                        <div class="image-caption">Mizzou Showcase</div>
+                        <div class="overlay">
+                            <div class="caption">Mizzou Showcase</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="gallery-item">
-                    <a href="../images/gallery/performance5-large.jpg" data-lightbox="band-photos" data-title="Local Venue Night - December 2024">
+                    <a href="../images/gallery/performance5-large.jpg" data-lightbox="performances" data-title="Local Venue Night - December 2024">
                         <img src="../images/gallery/performance5-thumb.jpg" alt="Local Venue Night">
-                        <div class="image-caption">Local Venue Night</div>
+                        <div class="overlay">
+                            <div class="caption">Local Venue Night</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="gallery-item">
-                    <a href="../images/gallery/performance6-large.jpg" data-lightbox="band-photos" data-title="Album Release Party - February 2025">
+                    <a href="../images/gallery/performance6-large.jpg" data-lightbox="performances" data-title="Album Release Party - February 2025">
                         <img src="../images/gallery/performance6-thumb.jpg" alt="Album Release Party">
-                        <div class="image-caption">Album Release Party</div>
+                        <div class="overlay">
+                            <div class="caption">Album Release Party</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
             </div>
             
-            <h2>Behind the Scenes</h2>
+            <div class="section-header">
+                <h2>Behind the Scenes</h2>
+                <p>A peek into our creative process</p>
+            </div>
             
             <div class="gallery-grid">
-                <!-- Example behind the scenes photos -->
+                <!-- Behind the scenes photos -->
                 <div class="gallery-item">
                     <a href="../images/gallery/bts1-large.jpg" data-lightbox="behind-scenes" data-title="Studio Session - Recording our first EP">
                         <img src="../images/gallery/bts1-thumb.jpg" alt="Studio Session">
-                        <div class="image-caption">Studio Session</div>
+                        <div class="overlay">
+                            <div class="caption">Studio Session</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="gallery-item">
                     <a href="../images/gallery/bts2-large.jpg" data-lightbox="behind-scenes" data-title="Rehearsal Night - Getting ready for the tour">
                         <img src="../images/gallery/bts2-thumb.jpg" alt="Rehearsal Night">
-                        <div class="image-caption">Rehearsal Night</div>
+                        <div class="overlay">
+                            <div class="caption">Rehearsal Night</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="gallery-item">
                     <a href="../images/gallery/bts3-large.jpg" data-lightbox="behind-scenes" data-title="Songwriting Session - Creating new material">
                         <img src="../images/gallery/bts3-thumb.jpg" alt="Songwriting Session">
-                        <div class="image-caption">Songwriting Session</div>
+                        <div class="overlay">
+                            <div class="caption">Songwriting Session</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
                 
                 <div class="gallery-item">
                     <a href="../images/gallery/bts4-large.jpg" data-lightbox="behind-scenes" data-title="Road Trip - On the way to our gig in Kansas City">
                         <img src="../images/gallery/bts4-thumb.jpg" alt="Road Trip">
-                        <div class="image-caption">Road Trip</div>
+                        <div class="overlay">
+                            <div class="caption">Road Trip</div>
+                            <div class="view-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -107,67 +167,207 @@
         
         <!-- Videos Section -->
         <section id="videos" class="gallery-section">
-            <h2>Live Performances</h2>
+            <div class="section-header">
+                <h2>Live Performances</h2>
+                <p>Watch us perform live at various venues</p>
+            </div>
             
             <div class="video-grid">
-                <!-- Example video items - replace with your actual videos -->
+                <!-- Video items -->
                 <div class="video-item">
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/your-video-id-1" title="Live at The Blue Note" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <h3>"Evolution" - Live at The Blue Note</h3>
-                    <p>March 15, 2024</p>
+                    <div class="video-info">
+                        <h3>"Evolution" - Live at The Blue Note</h3>
+                        <p class="video-date">March 15, 2024</p>
+                        <p class="video-description">Our performance of "Evolution" at The Blue Note in Columbia, Missouri. This was part of our Evolution Tour 2024.</p>
+                    </div>
                 </div>
                 
                 <div class="video-item">
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/your-video-id-2" title="Album Release Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <h3>"Primordial Soup" - Album Release Show</h3>
-                    <p>January 20, 2025</p>
+                    <div class="video-info">
+                        <h3>"Primordial Soup" - Album Release Show</h3>
+                        <p class="video-date">January 20, 2025</p>
+                        <p class="video-description">From our album release party at Rose Music Hall. This was the debut performance of our hit single "Primordial Soup".</p>
+                    </div>
                 </div>
             </div>
             
-            <h2>Music Videos</h2>
+            <div class="section-header">
+                <h2>Music Videos</h2>
+                <p>Official music videos and visualizers</p>
+            </div>
             
             <div class="video-grid">
                 <div class="video-item">
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/your-video-id-3" title="Official Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <h3>"Ancestral Call" - Official Music Video</h3>
-                    <p>December 12, 2024</p>
+                    <div class="video-info">
+                        <h3>"Ancestral Call" - Official Music Video</h3>
+                        <p class="video-date">December 12, 2024</p>
+                        <p class="video-description">The official music video for "Ancestral Call" from our debut album. Directed by Jane Smith and filmed in Columbia, MO.</p>
+                    </div>
                 </div>
                 
                 <div class="video-item">
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/your-video-id-4" title="Lyric Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <h3>"Evolutionary Leap" - Lyric Video</h3>
-                    <p>November 5, 2024</p>
+                    <div class="video-info">
+                        <h3>"Evolutionary Leap" - Lyric Video</h3>
+                        <p class="video-date">November 5, 2024</p>
+                        <p class="video-description">Lyric video for our track "Evolutionary Leap". Animation by John Doe Productions.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed">
+        <div class="container">
+            <div class="section-header">
+                <h2>Follow Us on Instagram</h2>
+                <p>@lastcommonancestor</p>
+            </div>
+            
+            <div class="insta-grid">
+                <!-- These would be actual Instagram embeds or images from Instagram -->
+                <div class="insta-item">
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="../images/gallery/insta1.jpg" alt="Instagram Post">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="insta-item">
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="../images/gallery/insta2.jpg" alt="Instagram Post">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="insta-item">
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="../images/gallery/insta3.jpg" alt="Instagram Post">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="insta-item">
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="../images/gallery/insta4.jpg" alt="Instagram Post">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="insta-item">
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="../images/gallery/insta5.jpg" alt="Instagram Post">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="insta-item">
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="../images/gallery/insta6.jpg" alt="Instagram Post">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="insta-follow">
+                <a href="https://instagram.com/" target="_blank" class="insta-btn">
+                    <i class="fab fa-instagram"></i> Follow Us
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Last Common Ancestor. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://instagram.com/" target="_blank">Instagram</a>
-                <a href="https://youtube.com/" target="_blank">YouTube</a>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Last Common Ancestor Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="home.html">Home</a>
+                    <a href="shows.html">Shows</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="merch.html">Merch</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://instagram.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://spotify.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                    <a href="https://facebook.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2025 Last Common Ancestor. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Include the navbar script -->
-    <script src="../assets/js/navbar-loader.js"></script>
-    
     <!-- Lightbox script for photo enlargement -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     
     <!-- Gallery functionality script -->
-    <script src="../assets/js/gallery.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching functionality
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const gallerySections = document.querySelectorAll('.gallery-section');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons and sections
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    gallerySections.forEach(section => section.classList.remove('active'));
+                    
+                    // Add active class to current button
+                    this.classList.add('active');
+                    
+                    // Show corresponding section
+                    const targetSection = document.getElementById(this.dataset.target);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    }
+                });
+            });
+            
+            // Initialize lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': "Image %1 of %2"
+            });
+        });
+    </script>
 </body>
 </html>
