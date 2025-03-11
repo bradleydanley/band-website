@@ -36,3 +36,11 @@ For next time:
 -updated shows page
 -tried to get the shows live-still needs work
 -added links on shows page
+
+3/11 notes:
+-Fixed home page upcoming shows
+-added past shows section - still needs work
+-worked on nav bar - still needs work
+-updated shared album
+-cart page added and unsused momentarily
+-next time: add a universal footer

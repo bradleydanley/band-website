@@ -24,7 +24,7 @@
         
         <!-- Tour Dates Section -->
         <section class="tour-dates">
-            <!-- Show 1 -->
+            <!-- Show 1 
             <div class="show-card">
                 <div class="show-date">
                     <div class="month">MAR</div>
@@ -33,13 +33,13 @@
                 </div>
                 <div class="show-info">
                     <h2>Dive Bar</h2>
-                    <p class="location">Columbia, MO</Menu:context></p>
+                    <p class="location">Columbia, MO</p>
                     <p class="additional-info">All ages welcome</p>
                 </div>
                 <div class="show-action">
-                    <span class="ticket-status ">Free Entry</span>
+                    <span class="ticket-status">Free Entry</span>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Show 2 -->
             <div class="show-card">
@@ -76,62 +76,69 @@
                     <a href="#" class="ticket-button">Get Tickets</a>
                 </div>
             </div>
+        </section>
 
-            <!-- Show 4 
-            <div class="show-card">
+        <!-- Past Shows Section -->
+        <section id="past-shows" class="tour-dates" style="display: none;">
+
+            <!-- Past Show 1 -->
+            <div class="show-card past-show-card">
                 <div class="show-date">
-                    <div class="month">APR</div>
-                    <div class="day">12</div>
+                    <div class="month">MAR</div>
+                    <div class="day">7</div>
                     <div class="year">2025</div>
                 </div>
                 <div class="show-info">
-                    <h2>The Fillmore</h2>
-                    <p class="location">San Francisco, CA</p>
-                    <p class="additional-info">All ages welcome</p>
+                    <h2>Dive Bar</h2>
+                    <p class="location">Columbia, MO</p>
+                    <p class="additional-info">Our first 3 hour gig!</p>
+                    <a href="https://www.instagram.com/p/DGdnQ69vxEu/" class="instagram-link">View on Instagram</a>
                 </div>
-                <div class="show-action">
-                    <span class="ticket-status limited">Limited Tickets</span>
-                    <a href="#" class="ticket-button">Get Tickets</a>
+                <div class="show-images">
+                    <img src="../images/past_show_1_1.jpg" alt="Past Show 1 Image 1">
+                    <img src="../images/past_show_1_2.jpg" alt="Past Show 1 Image 2">
                 </div>
             </div>
-            -->
-            <!-- Show 5 
-            <div class="show-card">
+            
+            <!-- Past Show 2-->
+            <div class="show-card past-show-card">
                 <div class="show-date">
-                    <div class="month">APR</div>
-                    <div class="day">20</div>
+                    <div class="month">JAN</div>
+                    <div class="day">24</div>
                     <div class="year">2025</div>
                 </div>
                 <div class="show-info">
-                    <h2>Metro</h2>
-                    <p class="location">Chicago, IL</p>
-                    <p class="additional-info">With special guests The Supporters</p>
+                    <h2>Rose Music Hall</h2>
+                    <p class="location">Columbia, MO</p>
+                    <p class="additional-info">Support from Laika and Tidal Volume</p>
+                    <a href="https://www.instagram.com/last.common.ancestor/" class="instagram-link">View on Instagram</a>
                 </div>
-                <div class="show-action">
-                    <span class="ticket-status soldout">Sold Out</span>
-                    <a href="#" class="waitlist-button">Join Waitlist</a>
+                <div class="show-images">
+                    <img src="../images/past_show_1_1.jpg" alt="Past Show 1 Image 1">
+                    <img src="../images/past_show_1_2.jpg" alt="Past Show 1 Image 2">
                 </div>
             </div>
-            -->
-            <!-- Show 6 
-            <div class="show-card">
+
+            <!-- Past Show 2 -->
+            <div class="show-card past-show-card">
                 <div class="show-date">
-                    <div class="month">MAY</div>
-                    <div class="day">02</div>
-                    <div class="year">2025</div>
+                    <div class="month">DEC</div>
+                    <div class="day">6</div>
+                    <div class="year">2024</div>
                 </div>
                 <div class="show-info">
-                    <h2>9:30 Club</h2>
-                    <p class="location">Washington, DC</p>
-                    <p class="additional-info">Doors open at 7PM</p>
+                    <h2>STOP DAY House Show</h2>
+                    <p class="location">Columbia, MO</p>
+                    <p class="additional-info">Support from Pink Houses and The Park</p>
+                    <a href="https://www.instagram.com/last.common.ancestor/" class="instagram-link">View on Instagram</a>
                 </div>
-                <div class="show-action">
-                    <span class="ticket-status available">Tickets Available</span>
-                    <a href="#" class="ticket-button">Get Tickets</a>
+                <div class="show-images">
+                    <img src="../images/past_show_2_1.jpg" alt="Past Show 2 Image 1">
+                    <img src="../images/past_show_2_2.jpg" alt="Past Show 2 Image 2">
                 </div>
             </div>
         </section>
-        -->
+
         <!-- Past Shows Toggle -->
         <div class="past-shows-toggle">
             <button id="view-past-shows">View Past Shows</button>
@@ -148,10 +155,17 @@
     <!-- Include the navbar loader script -->
     <script src="../assets/js/navbar-loader.js"></script>
 
-    <!-- Simple JavaScript for toggling past shows (optional) -->
+    <!-- Simple JavaScript for toggling past shows -->
     <script>
         document.getElementById('view-past-shows').addEventListener('click', function() {
-            alert('Past shows functionality would appear here');
+            const pastShowsSection = document.getElementById('past-shows');
+            if (pastShowsSection.style.display === 'none') {
+                pastShowsSection.style.display = 'block';
+                this.textContent = 'Hide Past Shows';
+            } else {
+                pastShowsSection.style.display = 'none';
+                this.textContent = 'View Past Shows';
+            }
         });
     </script>
 </body>

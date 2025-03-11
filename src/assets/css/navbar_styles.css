@@ -109,3 +109,58 @@ body {
   }
 }
 
+/* Cart icon styling */
+.cart-icon {
+  margin-left: 20px;
+  position: relative;
+}
+
+.cart-icon a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 0.7rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cart-count.has-items {
+  opacity: 1;
+}
+
+/* Added to cart message styling */
+.added-to-cart-message {
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.added-to-cart-message.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+

@@ -44,9 +44,8 @@ function createShowCard(show) {
 // Function to fetch shows data from shows.html
 async function fetchShowsData() {
     try {
-        const response = await fetch('../../pages/shows.html');
+        const response = await fetch('shows.html');
         const text = await response.text();
-        console.log('Fetched shows.html:', text);
         
         // Parse the HTML to extract shows data
         const parser = new DOMParser();
@@ -61,10 +60,13 @@ async function fetchShowsData() {
             const venue = card.querySelector('.show-info h2').textContent.trim();
             const location = card.querySelector('.show-info .location').textContent.trim();
             
-            return { month, day, year, venue, location };
+            return { 
+                date: parseShowDate(month, day, year), 
+                venue, 
+                location 
+            };
         });
         
-        console.log('Parsed shows data:', shows);
         return shows;
     } catch (error) {
         console.error('Error fetching shows data:', error);
@@ -83,7 +85,7 @@ async function loadUpcomingShows() {
     const shows = await fetchShowsData();
     
     // Filter shows to only include those within the next two weeks
-    const upcomingShows = shows.filter(show => isWithinTwoWeeks(parseShowDate(show.month, show.day, show.year)));
+    const upcomingShows = shows.filter(show => isWithinTwoWeeks(show.date));
 
     // Get the container for upcoming shows
     const upcomingShowsContainer = document.getElementById('upcoming-shows-list');

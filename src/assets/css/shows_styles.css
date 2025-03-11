@@ -212,6 +212,39 @@
     color: white;
 }
 
+/* Past shows styles */
+.past-show-card .show-info {
+    flex-grow: 1;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.past-show-card .instagram-link {
+    margin-top: 10px;
+    color: #3897f0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.past-show-card .instagram-link:hover {
+    text-decoration: underline;
+}
+
+.past-show-card .show-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.past-show-card .show-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
 /* Footer */
 footer {
     background: #333;
