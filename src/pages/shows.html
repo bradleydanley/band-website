@@ -9,9 +9,12 @@
     <script src="../assets/js/navbar-loader.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Band Website</title>
-    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
+    <title>Shows - Last Common Ancestor</title>
     <link rel="stylesheet" href="../assets/css/shows_styles.css">
+    
+    <!-- Footer styles and script -->
+    <link rel="stylesheet" href="../assets/css/footer_styles.css">
+    <script src="../assets/js/footer-loader.js" async></script>
 </head>
 <body>
     <!-- Top Bar -->
@@ -24,23 +27,6 @@
         
         <!-- Tour Dates Section -->
         <section class="tour-dates">
-            <!-- Show 1 
-            <div class="show-card">
-                <div class="show-date">
-                    <div class="month">MAR</div>
-                    <div class="day">7</div>
-                    <div class="year">2025</div>
-                </div>
-                <div class="show-info">
-                    <h2>Dive Bar</h2>
-                    <p class="location">Columbia, MO</p>
-                    <p class="additional-info">All ages welcome</p>
-                </div>
-                <div class="show-action">
-                    <span class="ticket-status">Free Entry</span>
-                </div>
-            </div> -->
-
             <!-- Show 2 -->
             <div class="show-card">
                 <div class="show-date">
@@ -80,7 +66,6 @@
 
         <!-- Past Shows Section -->
         <section id="past-shows" class="tour-dates" style="display: none;">
-
             <!-- Past Show 1 -->
             <div class="show-card past-show-card">
                 <div class="show-date">
@@ -95,7 +80,7 @@
                     <a href="https://www.instagram.com/p/DGdnQ69vxEu/" class="instagram-link">View on Instagram</a>
                 </div>
                 <div class="show-images">
-                    <img src="../images/past_show_1_1.jpg" alt="Past Show 1 Image 1">
+                    <img src="../images/Dive-Bar-3-7-anouncement.jpg" alt="Past Show 1 Image 1">
                     <img src="../images/past_show_1_2.jpg" alt="Past Show 1 Image 2">
                 </div>
             </div>
@@ -114,8 +99,8 @@
                     <a href="https://www.instagram.com/last.common.ancestor/" class="instagram-link">View on Instagram</a>
                 </div>
                 <div class="show-images">
-                    <img src="../images/past_show_1_1.jpg" alt="Past Show 1 Image 1">
-                    <img src="../images/past_show_1_2.jpg" alt="Past Show 1 Image 2">
+                    <img src="../images/Action_Shot.jpeg" alt="Past Show 1 Image 1">
+                    <img src="../images/Rose-Music-Hall-Bradley.jpg" alt="Past Show 1 Image 2">
                 </div>
             </div>
 
@@ -133,8 +118,26 @@
                     <a href="https://www.instagram.com/last.common.ancestor/" class="instagram-link">View on Instagram</a>
                 </div>
                 <div class="show-images">
-                    <img src="../images/past_show_2_1.jpg" alt="Past Show 2 Image 1">
-                    <img src="../images/past_show_2_2.jpg" alt="Past Show 2 Image 2">
+                    <img src="../images/stop-day-band.JPG" alt="Past Show 2 Image 1">
+                    <img src="../images/stop-day-band-2.JPG" alt="Past Show 2 Image 2">
+                </div>
+            </div>
+            <!-- Past Show 2 -->
+            <div class="show-card past-show-card">
+                <div class="show-date">
+                    <div class="month">NOV</div>
+                    <div class="day">1</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="show-info">
+                    <h2>Bouchelle Halloween Bash</h2>
+                    <p class="location">Columbia, MO</p>
+                    <p class="additional-info">Support from Pink Houses and Nightstand</p>
+                    <a href="https://www.instagram.com/last.common.ancestor/" class="instagram-link">View on Instagram</a>
+                </div>
+                <div class="show-images">
+                    <img src="../images/Halloween-band-1.JPG" alt="Past Show 2 Image 1">
+                    <img src="../images/Halloween-band-2.JPG" alt="Past Show 2 Image 2">
                 </div>
             </div>
         </section>
@@ -144,16 +147,6 @@
             <button id="view-past-shows">View Past Shows</button>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Band Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Include the navbar loader script -->
-    <script src="../assets/js/navbar-loader.js"></script>
 
     <!-- Simple JavaScript for toggling past shows -->
     <script>
@@ -168,5 +161,11 @@
             }
         });
     </script>
+
+    <!-- Footer container - moved to the bottom -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/upcoming-shows.js"></script>
 </body>
 </html>

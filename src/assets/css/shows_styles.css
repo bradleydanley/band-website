@@ -241,7 +241,7 @@
 .past-show-card .show-images img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    object-fit: cover; /* Ensure the image fits within the box */
     border-radius: 4px;
 }
 

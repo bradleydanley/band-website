@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.head.appendChild(fontAwesomeLink);
     }
     
-    // The footer HTML content as a string
+    // The footer HTML content as a string - band-focused with social links
     const footerHTML = `
     <footer class="universal-footer">
         <div class="container">
@@ -19,32 +19,32 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="../images/logo.png" alt="Last Common Ancestor Logo">
                 </div>
                 
-                <div class="footer-links">
-                    <a href="home.html">Home</a>
-                    <a href="shows.html">Shows</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="merch.html">Merch</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                
                 <div class="social-links">
-                    <a href="https://instagram.com/" target="_blank" class="social-icon" aria-label="Instagram">
+                    <a href="https://www.instagram.com/last.common.ancestor/" target="_blank" class="social-icon" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://youtube.com/" target="_blank" class="social-icon" aria-label="YouTube">
+                    <a href="https://www.youtube.com/@Last.common.ancestor" target="_blank" class="social-icon" aria-label="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="https://spotify.com/" target="_blank" class="social-icon" aria-label="Spotify">
-                        <i class="fab fa-spotify"></i>
+                    <a href="https://soundcloud.com/last-common-ancestor-166604331" target="_blank" class="social-icon" aria-label="SoundCloud">
+                        <i class="fab fa-soundcloud"></i>
                     </a>
-                    <a href="https://facebook.com/" target="_blank" class="social-icon" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
+                </div>
+                
+                <div class="footer-contact">
+                    <p class="contact-email">lastcommonancestor2024@gmail.com</p>
+                    <p class="contact-location">Columbia, Missouri</p>
+                </div>
+
+                <div class="newsletter-signup">
+                    <p>Join our mailing list</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
                 
                 <p class="copyright">&copy; 2025 Last Common Ancestor. All rights reserved.</p>
-                
-                <p class="credits">Website by Danny and Bradley</p>
             </div>
         </div>
     </footer>

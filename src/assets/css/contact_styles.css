@@ -292,51 +292,7 @@
     background: #f0f0f0;
   }
   
-  /* Footer */
-  footer {
-    background: #111;
-    color: white;
-    padding: 60px 0 30px;
-  }
   
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .footer-logo {
-    margin-bottom: 30px;
-  }
-  
-  .footer-logo img {
-    height: 60px;
-    width: auto;
-  }
-  
-  .footer-links {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-  }
-  
-  .footer-links a:hover {
-    color: #aaa;
-  }
-  
-  .copyright {
-    font-size: 0.8rem;
-    opacity: 0.6;
-  }
   
   /* Responsive Adjustments */
   @media (max-width: 900px) {

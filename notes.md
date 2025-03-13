@@ -44,3 +44,10 @@ For next time:
 -updated shared album
 -cart page added and unsused momentarily
 -next time: add a universal footer
+
+3/13 notes:
+-Updated past shows section
+-Changed the background color of the home page to a gradient
+-Updated the footer - SNW
+-added pictures to past shows - SNW
+-still need to update the navbar

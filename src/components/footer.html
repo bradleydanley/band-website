@@ -1,40 +1,89 @@
-<!-- Universal Footer HTML - Include this at the bottom of all pages -->
-<footer class="universal-footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="../images/logo.png" alt="Last Common Ancestor Logo">
-            </div>
-            
-            <div class="footer-links">
-                <a href="home.html">Home</a>
-                <a href="shows.html">Shows</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="merch.html">Merch</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://instagram.com/" target="_blank" class="social-icon" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://youtube.com/" target="_blank" class="social-icon" aria-label="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://spotify.com/" target="_blank" class="social-icon" aria-label="Spotify">
-                    <i class="fab fa-spotify"></i>
-                </a>
-                <a href="https://facebook.com/" target="_blank" class="social-icon" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
-            
-            <p class="copyright">&copy; 2025 Last Common Ancestor. All rights reserved.</p>
-            
-            <p class="credits">Website by Danny and Bradley</p>
-        </div>
-    </div>
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preload the navbar CSS -->
+    <link rel="preload" href="../assets/css/navbar_styles.css" as="style">
+    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
 
-<!-- Add this to the head section of your HTML files -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <!-- Preload and execute the navbar script as soon as possible -->
+    <script src="../assets/js/navbar-loader.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows - Last Common Ancestor</title>
+    <link rel="stylesheet" href="../assets/css/shows_styles.css">
+    
+    <!-- Footer styles -->
+    <link rel="stylesheet" href="../assets/css/footer_styles.css">
+    
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div id="navbar-container"></div>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <!-- Your existing content here -->
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('view-past-shows').addEventListener('click', function() {
+            const pastShowsSection = document.getElementById('past-shows');
+            if (pastShowsSection.style.display === 'none') {
+                pastShowsSection.style.display = 'block';
+                this.textContent = 'Hide Past Shows';
+            } else {
+                pastShowsSection.style.display = 'none';
+                this.textContent = 'View Past Shows';
+            }
+        });
+    </script>
+
+    <!-- Footer directly in the page (no loader needed) -->
+    <footer class="universal-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/last.common.ancestor/" target="_blank" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@Last.common.ancestor" target="_blank" class="social-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://soundcloud.com/last-common-ancestor-166604331" target="_blank" class="social-icon" aria-label="SoundCloud">
+                        <i class="fab fa-soundcloud"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-subscribe">
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Subscribe to our mailing list" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+                <p class="credits">Created by Bradley and Danny</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Newsletter form script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    alert('Thanks for subscribing to our newsletter!');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+
+    <!-- Other scripts -->
+    <script src="../assets/js/upcoming-shows.js"></script>
+</body>
+</html>
