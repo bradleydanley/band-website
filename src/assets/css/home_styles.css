@@ -7,11 +7,11 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(25deg, #101e54, #b1b8eb, #334076,#b1b8eb,#101e54); /* Three-color gradient background */
+    background: #e6e7ae;  /* Added missing semicolon here */
     color: #333;
     line-height: 1.6;
     padding-top: 90px; /* Accommodate the fixed navbar */
-  }
+}
   
   .container {
     width: 90%;

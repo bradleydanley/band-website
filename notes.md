@@ -51,3 +51,10 @@ For next time:
 -Updated the footer - SNW
 -added pictures to past shows - SNW
 -still need to update the navbar
+
+3/20
+To do next time:
+    Decide about home page
+    Fix show page to center the pictures
+    add pictures to gallery
+    
