@@ -1,22 +1,23 @@
-// navbar-loader.js - Updated to prevent flickering
+// navbar-loader.js - Improved logo positioning
 
 // Create and inject the navbar as soon as possible - before DOMContentLoaded
 (function() {
-    // The navbar HTML content as a string
+    // The navbar HTML content as a string with properly positioned logo
     const navbarHTML = `
     <header class="top-bar">
         <div class="container">
             <div class="logo">
-                <img src"../images/LastCommonAncestorInveredLogo.png" alt="Band Logo">
-                <img src="../images/invertedlogo.png" alt="Band Logo">
+                <a href="home.html">
+                    <img src="../images/invertedlogo.png" alt="Last Common Ancestor Logo">
+                </a>
             </div>
             <nav>
                 <ul>
                     <li><a href="home.html" id="nav-home">Home</a></li>
                     <li><a href="shows.html" id="nav-shows">Shows</a></li>
-                    <li><a href="contact.html" id="nav-contact">Contact</a></li>
-                    <li><a href="merch.html" id="nav-merch">Merch</a></li>
                     <li><a href="gallery.html" id="nav-gallery">Gallery</a></li>
+                    <li><a href="merch.html" id="nav-merch">Merch</a></li>
+                    <li><a href="contact.html" id="nav-contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,9 +53,9 @@
         const pageToNavId = {
             'home.html': 'nav-home',
             'shows.html': 'nav-shows',
-            'contact.html': 'nav-contact',
-            'merch.html': 'nav-merch',
             'gallery.html': 'nav-gallery',
+            'merch.html': 'nav-merch',
+            'contact.html': 'nav-contact',
             // Add default case for index or empty path
             '': 'nav-home',
             'index.html': 'nav-home'

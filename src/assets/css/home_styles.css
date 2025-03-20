@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(25deg, #101e54, #b1b8eb, #101e54,#101e54,#101e54); /* Three-color gradient background */
+    background: linear-gradient(25deg, #101e54, #b1b8eb, #334076,#b1b8eb,#101e54); /* Three-color gradient background */
     color: #333;
     line-height: 1.6;
     padding-top: 90px; /* Accommodate the fixed navbar */

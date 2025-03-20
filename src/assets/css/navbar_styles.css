@@ -36,13 +36,31 @@ body {
 }
 
 /* Logo styling with fixed dimensions */
+.top-bar .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.top-bar .logo a {
+  display: block;
+  height: 70px; /* Set a fixed height for the logo container */
+}
+
 .top-bar .logo img {
-  height: 60px;
+  height: 100%;
   width: auto;
   display: block; /* Prevent inline spacing issues */
+  max-height: 70px; /* Prevent logo from being too large */
 }
 
 /* Navigation styling */
+.top-bar nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .top-bar nav ul {
   list-style: none;
   display: flex;
@@ -81,7 +99,8 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .top-bar {
-    padding: 10px 0;
+    height: auto;
+    padding: 15px 0;
   }
   
   .top-bar .container {
@@ -89,16 +108,30 @@ body {
     justify-content: center;
   }
   
+  .top-bar .logo {
+    margin-bottom: 15px;
+  }
+  
+  .top-bar .logo img {
+    height: 50px;
+  }
+  
   .top-bar nav ul {
     margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .top-bar nav ul li {
-    margin: 0 10px;
+    margin: 5px 10px;
   }
 }
 
 @media (max-width: 480px) {
+  body {
+    padding-top: 140px; /* More padding for smaller screens */
+  }
+  
   .top-bar nav ul {
     flex-wrap: wrap;
     justify-content: center;
@@ -163,4 +196,3 @@ body {
   transform: translateX(0);
   opacity: 1;
 }
-
