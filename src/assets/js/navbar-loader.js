@@ -8,7 +8,7 @@
         <div class="container">
             <div class="logo">
                 <a href="home.html">
-                    <img src="../images/invertedlogo.png" alt="Last Common Ancestor Logo">
+                    <img src="../images/Band Logos/invertedlogo.png" alt="Last Common Ancestor Logo">
                 </a>
             </div>
             <nav>

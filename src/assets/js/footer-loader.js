@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="footer-content">
                 <div class="footer-logo">
                     <a href="home.html">
-                        <img src="../images/logo.png" alt="Last Common Ancestor Logo">
+                        <img src="../images/Band Logos/logo.png" alt="Last Common Ancestor Logo">
                     </a>
                 </div>
                 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="contact-location">Columbia, Missouri</p>
                 </div>
                 
-                <p class="copyright">&copy; 2025 Last Common Ancestor. All rights reserved.</p>
+                <p class="copyright">&copy; 2025 Last Common Ancestor. All rights reserved. Made by Bradley and Danny</p>
             </div>
         </div>
     </footer>

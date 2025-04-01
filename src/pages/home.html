@@ -9,19 +9,48 @@
     <script src="../assets/js/navbar-loader.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Band Website</title>
-    <link rel="stylesheet" href="../assets/css/navbar_styles.css">
+    <title>Last Common Ancestor</title>
     <link rel="stylesheet" href="../assets/css/home_styles.css">
     
     <!-- Add footer styles -->
     <link rel="stylesheet" href="../assets/css/footer_styles.css">
+
+    <!-- Google Fonts for prehistoric title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Add prehistoric font styles (inline to minimize changes) -->
+    <style>
+        .hero-text h1 {
+            font-family: 'Rock Salt', cursive;
+            font-size: 3.2rem;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+            line-height: 1.2;
+            color: #f8f8d8; /* Slightly off-white, bone-like color */
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Top Bar -->
     <div id="navbar-container"></div>
 
     <div class="hero">
-        <img src="../images/Action_Shot.jpeg" alt="Action Shot" class="hero-image">
+        <img src="../images/Gig Photos/Rose Music Hall/Action_Shot.jpeg" alt="Action Shot" class="hero-image">
         <div class="hero-text">
             <h1>Last Common Ancestor</h1>
             <p>Est. 2024, Columbia MO</p>
@@ -51,18 +80,11 @@
             </p>
         </div>
         <div class="about-image">
-            <img src="../images/logo.png" alt="About Us Image">
+            <img src="../images/Band Logos/logo.png" alt="About Us Image">
         </div>
     </section>
 
-    <!-- Remove this original footer or comment it out -->
-    <!-- 
-    <footer>
-        <p>&copy; 2025 Last Common Ancestor. All rights reserved.</p>
-    </footer>
-    -->
-
-    <!-- Footer container - moved to the bottom -->
+    <!-- Footer container -->
     <div id="footer-container"></div>
 
     <!-- Include the navbar loader script -->

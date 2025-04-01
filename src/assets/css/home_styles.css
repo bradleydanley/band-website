@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background: #e6e7ae;  /* Added missing semicolon here */
+    background: #ffffff;  /* Added missing semicolon here */
     color: #333;
     line-height: 1.6;
     padding-top: 90px; /* Accommodate the fixed navbar */
@@ -24,6 +24,7 @@
     position: relative;
     color: white;
     text-align: center;
+    margin-bottom: 0; /* Remove any margin below the hero section */
 }
 
 .hero-image {
@@ -31,6 +32,9 @@
     height: auto;
     object-fit: cover;
     position: relative;
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 .hero-text {
     position: absolute;
@@ -186,6 +190,16 @@ footer {
 .loading-text {
     color: #666;
     font-style: italic;
+}
+
+/* Black bar styles */
+.black-bar {
+    width: 100%;
+    height: 25px; /* Adjust height as needed */
+    background-color: #000; /* Black color */
+    margin: 0; /* Remove any default margin */
+    padding: 10; /* Remove any default padding */
+    position: relative; /* Ensure it stays in place */
 }
 
 /* Responsive adjustments */

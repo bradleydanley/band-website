@@ -23,6 +23,8 @@ body {
   z-index: 1000;
   display: flex;
   align-items: center;
+  font-family: 'Arial', sans-serif; /* Explicitly set the font-family for the navbar */
+  padding: 0 20px; /* Add consistent padding inside the navbar */
 }
 
 .top-bar .container {
@@ -38,7 +40,7 @@ body {
 /* Logo styling with fixed dimensions */
 .top-bar .logo {
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically align the logo */
   height: 100%;
 }
 
@@ -52,6 +54,7 @@ body {
   width: auto;
   display: block; /* Prevent inline spacing issues */
   max-height: 70px; /* Prevent logo from being too large */
+  margin-right: 10px; /* Add consistent spacing between the logo and text */
 }
 
 /* Navigation styling */
@@ -65,15 +68,17 @@ body {
   list-style: none;
   display: flex;
   margin: 0; /* Explicitly remove any margin */
+  padding: 0; /* Remove any default padding */
   height: 100%; /* Full height */
   align-items: center;
+  line-height: 1; /* Ensure consistent line height */
 }
 
 .top-bar nav ul li {
   margin-left: 20px;
   height: 100%; /* Full height for list items */
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically align the nav items */
 }
 
 .top-bar nav ul li a {
