@@ -15,17 +15,137 @@
     <!-- Footer styles and script -->
     <link rel="stylesheet" href="../assets/css/footer_styles.css">
     <script src="../assets/js/footer-loader.js" async></script>
+
+    <!-- Coming Soon Styles -->
+    <style>
+        .coming-soon-container {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .coming-soon-container h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        
+        .coming-soon-container .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        
+        .coming-soon-container .description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #666;
+        }
+        
+        .logo-container {
+            margin-bottom: 40px;
+        }
+        
+        .logo-container img {
+            max-width: 250px;
+            height: auto;
+        }
+        
+        .social-links {
+            margin-top: 60px;
+        }
+        
+        .social-links h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            color: #444;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: #333;
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background: #555;
+            transform: translateY(-3px);
+        }
+        
+        .shows-link {
+            display: inline-block;
+            margin-top: 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        .shows-link:hover {
+            background: #555;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
    <!-- Top Bar -->
    <div id="navbar-container"></div>
 
-    <!-- Main Content -->
+    <!-- Coming Soon Content -->
+    <div class="coming-soon-container">
+        <div class="logo-container">
+            <img src="../images/Band Logos/logo.png" alt="Last Common Ancestor Logo">
+        </div>
+        
+        <h1>Merch Coming Soon</h1>
+        <p class="subtitle">We're currently evolving our merchandise collection</p>
+        
+        <p class="description">
+            We're working on creating high-quality merchandise for our fans. T-shirts, vinyl records, posters, and more will be available soon. Stay tuned for the launch of our official merch store!
+        </p>
+        
+        <a href="shows.html" class="shows-link">See Upcoming Shows</a>
+        
+        <div class="social-links">
+            <h3>Follow us for updates:</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/last.common.ancestor/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@Last.common.ancestor" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://soundcloud.com/last-common-ancestor-166604331" target="_blank" class="social-icon">
+                    <i class="fab fa-soundcloud"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Original Merch Content (Commented Out) -->
+    <!--
     <div class="container main-content">
         <h1>Official Merchandise</h1>
         <p>Support the band with our official merchandise. From t-shirts to vinyl records, we've got you covered.</p>
         
-        <!-- Current Merchandise Section -->
         <section class="current-merch">
             <h2>Available Now</h2>
             <div class="merch-container">
@@ -67,7 +187,6 @@
             </div>
         </section>
 
-        <!-- Upcoming Merchandise Section -->
         <section class="upcoming-merch">
             <h2>Upcoming Merchandise</h2>
             <div class="merch-container">
@@ -112,11 +231,12 @@
             </div>
         </section>
     </div>
+    -->
 
     <!-- Footer container -->
     <div id="footer-container"></div>
 
-    <!-- Cart functionality script -->
-    <script src="../assets/js/cart.js"></script>
+    <!-- Comment out the cart script since we don't need it for the coming soon page -->
+    <!-- <script src="../assets/js/cart.js"></script> -->
 </body>
 </html>
