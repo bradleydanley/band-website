@@ -23,6 +23,18 @@
     
     <!-- Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Additional styles for centered location info */
+        .contact-info-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .social-links {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -39,8 +51,9 @@
 
     <!-- Main Content -->
     <main class="contact-container">
+        <!-- Entire contact form section commented out -->
+        <!--
         <div class="contact-grid">
-            <!-- Contact Form Section -->
             <section class="contact-form-section">
                 <div class="form-header">
                     <h2>Send Us a Message</h2>
@@ -77,13 +90,17 @@
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </section>
+        -->
             
+        <!-- Modified contact grid for centered content -->
+        <div class="contact-grid" style="grid-template-columns: 1fr;">
             <!-- Contact Info Section -->
             <section class="contact-info-section">
                 <div class="info-card">
                     <h3>Connect With Us</h3>
                     
                     <div class="contact-methods">
+                        <!-- Email contact method restored -->
                         <div class="contact-method">
                             <div class="icon"><i class="fas fa-envelope"></i></div>
                             <div class="details">
@@ -116,6 +133,8 @@
                         </div>
                     </div>
                     
+                    <!-- Newsletter section commented out -->
+                    <!--
                     <div class="newsletter">
                         <h4>Join Our Mailing List</h4>
                         <p>Stay updated on new releases, shows, and exclusive content.</p>
@@ -124,6 +143,7 @@
                             <button type="submit">Subscribe</button>
                         </form>
                     </div>
+                    -->
                 </div>
             </section>
         </div>
@@ -132,7 +152,8 @@
     <!-- Footer container -->
     <div id="footer-container"></div>
 
-    <!-- Form submission handling -->
+    <!-- Form submission handling script commented out -->
+    <!--
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
@@ -142,6 +163,8 @@
             this.reset();
         });
         
+        // Newsletter form handler commented out
+        /*
         document.querySelector('.newsletter-form').addEventListener('submit', function(event) {
             event.preventDefault();
             // Here you would normally handle the newsletter subscription
@@ -149,6 +172,8 @@
             alert('Thanks for subscribing to our newsletter!');
             this.reset();
         });
+        */
     </script>
+    -->
 </body>
 </html>
